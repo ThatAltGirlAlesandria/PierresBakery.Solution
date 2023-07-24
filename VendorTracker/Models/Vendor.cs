@@ -2,21 +2,21 @@ using System.Collections.Generic;
 
 namespace VendorTracker.Models
 {
-  public class Order{
+  public class Vendor{
 
-    private static List<Order> _intances = new List<Order> {};
+    private static List<Vendor> _intances = new List<Vendor> {};
 
     public string VendorName {get; set;}
     public string VendorDescription {get; set;}
-    public int IdNumber {get;}
+    public int VendorId {get;}
     public List<VendorOrder> VendorOrder {get; set;}
 
-    public Order(string name, string decription)
+    public Order(string vendorName, string vednorDescription)
     {
-      VendorName = name;
-      VendorDescription = decription;
+      VendorName = vendorName;
+      VendorDescription = vendorDescription;
       instances.Add(this);
-      IdNumber = _instances.Count;
+      VendorId = _instances.Count;
       VendorOrder = new List<VendorOrder>{};
     }
   }
