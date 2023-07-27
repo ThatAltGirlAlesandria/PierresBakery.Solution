@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+@using VendorTracker.Models;
+<h1>Vendors:</h1>
+@if (@Model.Count == 0)
+{
+  <h2>Currently, no vendors have been added.</h2>
+}
+@foreach(Vendor vendor in Model)
+{
+  <h3><a href='/vendor/@vendor.Id'>@vendor.VendorName</a></h3>
+  <div>
+    <p>Vendor description: @vendor.VendorDescription</p>
+  </div>
+}
+
+<div>
+  <p><a href='/'>Home</a></p>
+  <p>Click <a href='/vendor/new'>here</a> if you would like to add a new vendor.</p>
+</div>

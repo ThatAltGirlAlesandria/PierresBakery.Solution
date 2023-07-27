@@ -3,8 +3,8 @@
 }
 
 <h1>Add a new order to @Model.VendorName</h1>
-<form action="vendor/@Model.vendorId/order" method="post">
-  <input id="Id" name="Id" type="hidden" value="@Model.vendorId">
+<form action="vendor/@Model.Id/order" method="post">
+  <input id="Id" name="Id" type="hidden" value="@Model.Id">
   <label for="orderName">Order Name:</label>
   <input id="orderName" name="orderName" type="text">
   <label for="orderPrice">Price of your order:</label>
