@@ -45,7 +45,7 @@ namespace VendorTracker.Tests
     }
 
     [TestMethod]
-    public void GetAll_ReturnsAllObjects_VendorDetails()
+    public void Find_ReturnsAllObjects_VendorDetails()
     {
       string name1 = "Starbucks";
       string description1= "Cafe";

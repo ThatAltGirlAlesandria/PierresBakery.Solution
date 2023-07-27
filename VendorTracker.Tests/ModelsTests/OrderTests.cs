@@ -106,5 +106,22 @@ namespace VendorTracker.Tests
 
       CollectionAssert.AreEqual(newOrderList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string orderName1 = "Starbucks";
+      string orderDescription1 = "Pastries";
+      int orderPrice1 = 450;
+      DateTime date1 = new DateTime(2023, 07, 27);
+      string orderName2 = "Dutchies";
+      string orderDescription2 = "Pastries";
+      int orderPrice2 = 45;
+      DateTime date2 = new DateTime(2023, 08, 27);
+      Order newOrder1 = new Order(orderName1, orderDescription1, orderPrice1, date1);
+      Order newOrder2 = new Order(orderName2, orderDescription2, orderPrice2, date2);
+      Order result = Order.Find(2);
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }
