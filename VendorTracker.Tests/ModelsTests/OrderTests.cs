@@ -8,7 +8,7 @@ namespace VendorTracker.Tests
   [TestClass]
   public class OrderTest: IDisposable
   {
-    public void Clear()
+    public void Dispose()
     {
       Order.ClearAll();
     }
