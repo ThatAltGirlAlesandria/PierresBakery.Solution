@@ -4,13 +4,13 @@
 
 @using VendorTracker.Models;
 
-<h1>List of orders from vendor @Model["vendor"].NameOfVendor :</h1>
+<h1>List of orders from vendor @Model["vendor"].VendorName :</h1>
 
 <ol>
 @foreach (Order order in @Model["order"])
 {
   <div>
-    <li><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.OrderDescription</a></li>
+    <li><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.OrderTitle</a></li>
   </div>
 }
 </ol>

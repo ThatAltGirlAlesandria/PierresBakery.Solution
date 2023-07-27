@@ -27,7 +27,7 @@ namespace VendorTracker.Tests
       string description = "Cafe";
       VendorTests newVendor = new Vendor(name, description);
 
-      string result = newVendor.
+      //string result = newVendor.
 
     }
   }
