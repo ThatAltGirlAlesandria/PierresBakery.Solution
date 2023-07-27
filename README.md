@@ -1,4 +1,4 @@
-# PierreBakery
+# PierreBakery.Solution
 
 ### By _Alesandria Wild_
 ##### | Alesandria Wild               | [Github](https://github.com/ThatAltGirlAlesandria)| [LinkedIn](https://www.linkedin.com/in/alesandria-wild/)      |
